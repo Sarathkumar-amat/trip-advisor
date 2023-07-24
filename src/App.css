@@ -1,18 +1,63 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: black;
+  color: white;
+}
+body{
+  background-color: black;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h4, .heading{
+  color: blue;
 }
 
+.continent-container{
+  display: flex;
+  justify-content: center; 
+}
+.continent-card {
+  position: relative;
+  margin:20px;
+}
+.other-details{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.continent-card img{
+  height: 200px;
+  width: 200px;
+  /* position: absolute; */
+}
+.cont-name{
+  margin-left:5px;
+}
+.continent-name-detail{
+  position: absolute;
+  bottom: 0;
+  margin-left: 5px;
+}
+.destination-detail-container{
+  display: flex;
+  text-align: left; 
+  justify-content: center;
+  margin:30px;
+}
+header{
+  text-align: center;
+}
+.backButton{
+  position: absolute;
+  top:0;
+  left:0;
+  margin:10px;
+}
+
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +80,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
