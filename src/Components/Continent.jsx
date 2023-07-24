@@ -14,7 +14,7 @@ export function Continent()
     return (<div>
         <button onClick={()=>navigate("/")} className="backButton">Back</button>
         <header>
-        <h3>Top Countries in {continentData?.name} for your next holiday</h3>
+        <h2>Top Countries in {continentData?.name} for your next holiday</h2>
         </header>
         <div className="continent-container">{continentData?.countries?.map((country)=>{
             const {id,name,image}=country

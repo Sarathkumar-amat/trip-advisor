@@ -56,7 +56,54 @@ header{
   left:0;
   margin:10px;
 }
-
+.detail-container{
+  display: flex;
+  word-wrap: break-word;
+}
+.heading{
+  word-wrap: break-word;
+  margin-right:10px;
+  width: 120px;
+}
+.content{
+  word-wrap: break-word;
+  max-width: 600px;
+}
+@media (max-width: 767px)
+{
+  .continent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  .destination-detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+  }
+  .other-details{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin:20px;
+  }
+  .heading{
+    word-wrap: break-word;
+    margin-right:10px;
+    width: 90px;
+  }
+  header h2{
+    font-size: small;
+  }
+  header h1{
+    font-size: x-large;
+  }
+  body{
+    word-wrap: break-word;
+  }
+}
 /* 
 .App-header {
   background-color: #282c34;

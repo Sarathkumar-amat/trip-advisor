@@ -14,7 +14,7 @@ export function Country()
     return (<div>
         <button onClick={()=>navigate("/continent")} className="backButton">Back</button>
         <header>
-        <h3>Top Spots in {countryData?.name} for your next holiday</h3>
+            <h2>Top Spots in {countryData?.name} for your next holiday</h2>
         </header>
         <div className="continent-container">{countryData?.destinations?.map((spot)=>{
             const {id,name,image}=spot

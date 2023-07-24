@@ -16,12 +16,12 @@ export function Destination()
         <div className="destination-detail-container">
             <img height="300px" width="300px" src={destinationData?.image} alt="spot-cover" />
             <div style={{marginLeft:"20px"}} className="other-details">
-                <div><span className="heading">Description:</span> {destinationData?.description}</div>
-                <div><span className="heading">Ratings:</span> {destinationData?.ratings}</div>
-                <div><span className="heading">Reviews: </span>{destinationData?.reviews}</div>
-                <div><span className="heading">Location: </span>{destinationData?.location}</div>
-                <div><span className="heading">Opening Hours:</span> {destinationData?.openingHours}</div>
-                <div><span className="heading">Ticket Price:</span> {destinationData?.ticketPrice}</div>
+                <div className="detail-container"><span className="heading">Description:</span> <span className="content">{destinationData?.description}</span></div>
+                <div className="detail-container"><span className="heading">Ratings:</span> <span className="content">{destinationData?.ratings}</span></div>
+                <div className="detail-container"><span className="heading">Reviews: </span><span className="content">{destinationData?.reviews}</span></div>
+                <div className="detail-container"><span className="heading">Location: </span><span className="content">{destinationData?.location}</span></div>
+                <div className="detail-container"><span className="heading">Opening Hours:</span> <span className="content">{destinationData?.openingHours}</span></div>
+                <div className="detail-container"><span className="heading">Ticket Price:</span><span className="content"> {destinationData?.ticketPrice}</span></div>
                 <a style={{color:"pink"}} href={destinationData?.website}>Website</a>
             </div>
         </div>
