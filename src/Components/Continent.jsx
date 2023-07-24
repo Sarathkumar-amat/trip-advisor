@@ -17,7 +17,7 @@ export function Continent()
         <h2>Top Countries in {continentData?.name} for your next holiday</h2>
         </header>
         <div className="continent-container">{continentData?.countries?.map((country)=>{
-            const {id,name,image}=country
+            const {name,image}=country
             return (<div onClick={()=>handleContClick(country)} className="continent-card"> 
                 <img src={image} alt="country-cover" />
                 <p className="continent-name-detail">
